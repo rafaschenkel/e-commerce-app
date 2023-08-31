@@ -1,9 +1,11 @@
-const abrirCarrinho = () => {
+const handleCart = () => {
     const meuCarrinho = document.getElementById('meu-carrinho');
-    meuCarrinho.classList.remove('hidden');
+    meuCarrinho.classList.toggle('hidden');
 };
 
-const fecharCarrinho = () => {
-    const meuCarrinho = document.getElementById('meu-carrinho');
-    meuCarrinho.classList.add('hidden');
+export const initCart = () => {
+    const buttonOpenCart = document.getElementById('abrir-carrinho');
+    buttonOpenCart.addEventListener('click', handleCart);
+    const buttonCloseCart = document.getElementById('fechar-carrinho');
+    buttonCloseCart.addEventListener('click', handleCart);
 };

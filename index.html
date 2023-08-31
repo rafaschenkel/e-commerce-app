@@ -19,7 +19,7 @@
                 <button type="button"
                     class="text-zinc-50 text-xl font-bold border-b-2 border-transparent transition ease-linear duration-300 hover:border-b-2 hover:border-yellow-300"><i
                         class="fa-regular fa-user mr-2"></i>Minhas compras</button>
-                <button id="carrinho" type="button" onclick="abrirCarrinho()"
+                <button id="abrir-carrinho" type="button"
                     class="text-zinc-50 text-xl font-bold border-b-2 border-transparent transition ease-linear duration-300 hover:border-b-2 hover:border-yellow-300"><i
                         class="fa-solid fa-cart-shopping mr-2"></i>Meu Carrinho</button>
             </nav>
@@ -31,8 +31,7 @@
             <div>
                 <div id="cabecalho-carrinho" class="flex justify-between mb-5">
                     <p class="font-bold text-xl">Meu carrinho</p>
-                    <button id="fechar-carrinho" onclick="fecharCarrinho()"><i
-                            class="fa-regular fa-xl fa-circle-xmark"></i></button>
+                    <button id="fechar-carrinho"><i class="fa-regular fa-xl fa-circle-xmark"></i></button>
                 </div>
                 <ul id="produtos-carrinho" class="flex flex-col gap-3">
                     <li class="flex h-20 gap-3 items-center w-full">
@@ -71,8 +70,7 @@
         <h2 class="text-2xl my-4 text-center font-bold">Produtos</h2>
         <ul id="container-produtos" class="flex justify-center max-w-5xl mx-auto gap-5 flex-wrap"></ul>
     </main>
-    <script src="./main.js"></script>
-    <script src="./src/assets/js/carrinho.js"></script>
+    <script type="module" src="./main.js"></script>
 </body>
 
 </html>

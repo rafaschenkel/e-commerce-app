@@ -1,3 +1,5 @@
+import { initCart } from './src/assets/js/carrinho';
+
 const catalogoProdutos = [
     {
         id: 1,
@@ -92,3 +94,4 @@ const listarProdutos = () => {
 const listaProdutos = listarProdutos();
 
 document.getElementById('container-produtos').innerHTML += listaProdutos;
+initCart();
