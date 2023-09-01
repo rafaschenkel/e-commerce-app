@@ -27,14 +27,14 @@
     </header>
     <main class="max-w-6xl mx-auto mb-5">
         <section id="meu-carrinho"
-            class="border-l-4 border-slate-600 flex flex-col justify-between fixed right-[-384px] top-0 w-96 min-h-screen bg-slate-950 z-10 text-slate-50 p-4 duration-300 linear">
-            <div>
-                <div id="cabecalho-carrinho" class="flex justify-between mb-5">
-                    <p class="font-bold text-xl"><i class="fa-solid fa-cart-shopping mr-2"></i>Meu carrinho</p>
-                    <button id="fechar-carrinho"><i class="fa-regular fa-xl fa-circle-xmark"></i></button>
-                </div>
-                <ul id="produtos-carrinho" class="flex flex-col gap-3"></ul>
+            class="border-l-4 border-slate-600 flex flex-col justify-between fixed right-[-384px] top-0 w-96 h-[100vh] bg-slate-950 z-10 text-slate-50 p-4 duration-300 linear">
+
+            <div id="cabecalho-carrinho" class="flex justify-between mb-5 self-start">
+                <p class="font-bold text-xl"><i class="fa-solid fa-cart-shopping mr-2"></i>Meu carrinho</p>
+                <button id="fechar-carrinho"><i class="fa-regular fa-xl fa-circle-xmark"></i></button>
             </div>
+            <ul id="produtos-carrinho" class="flex flex-col gap-3 mb-2 h-4/5 overflow-y-auto"></ul>
+
             <div class="flex flex-col">
                 <div class="flex gap-5">
                     <p class="text-lg font-bold">Total:</p>
