@@ -4,8 +4,10 @@ import {
     initCart,
     renderizarProdutosNoCarrinho
 } from './src/assets/js/carrinho';
+import { inicializarFiltros } from './src/assets/js/filtrarProdutos';
 
 listarProdutos();
 initCart();
 renderizarProdutosNoCarrinho();
 atualizarPrecoCarrinho();
+inicializarFiltros();
