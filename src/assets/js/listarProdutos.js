@@ -1,5 +1,5 @@
-import { addToCart } from './carrinho';
-import { catalogoProdutos } from './catalogo';
+import { adicionarAoCarrinho } from './carrinho';
+import { catalogoProdutos } from './utilidades';
 
 export const listarProdutos = () => {
     const listaProdutos = catalogoProdutos
@@ -22,6 +22,6 @@ export const listarProdutos = () => {
 
     const buttons = document.querySelectorAll('.addToCart');
     catalogoProdutos.forEach((produto, i) =>
-        buttons[i].addEventListener('click', () => addToCart(produto.id))
+        buttons[i].addEventListener('click', () => adicionarAoCarrinho(produto.id))
     );
 };
