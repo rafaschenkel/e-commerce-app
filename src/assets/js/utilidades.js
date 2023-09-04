@@ -72,3 +72,7 @@ export const salvarLocalStorage = (chave, info) => {
 export const buscarLocalStorage = chave => {
     return JSON.parse(localStorage.getItem(chave));
 };
+
+export const removeDoLocalStorage = chave => {
+    localStorage.removeItem(chave);
+};
