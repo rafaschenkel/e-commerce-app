@@ -81,7 +81,7 @@ function finalizarCompra(e) {
     const historicoAtualizado = [pedido, ...historicoCompras];
     salvarLocalStorage('historicoCompras', historicoAtualizado);
     removeDoLocalStorage('carrinho');
-    window.location.href = window.location.origin + '/pedidos.html';
+    window.location.href = './pedidos.html';
 }
 
 function initCheckout() {

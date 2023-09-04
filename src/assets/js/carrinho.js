@@ -136,11 +136,11 @@ export function initCart() {
 
 function irParaCheckout() {
     if (Object.keys(idsProdutoCarrinhoComQuantidade).length === 0) return;
-    window.location.href = window.location.origin + '/checkout.html';
+    window.location.href = './checkout.html';
 }
 
 function irParaMinhasCompras() {
-    window.location.href = window.location.origin + '/pedidos.html';
+    window.location.href = './pedidos.html';
 }
 
 export function atualizarPrecoCarrinho() {
