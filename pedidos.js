@@ -36,7 +36,7 @@ function desenharProdutosCarrinho(idProduto, qtdProduto, idLista) {
     li.classList.add(...liClassList);
 
     li.innerHTML = `
-        <img src="./src/assets/img/${product.imagem}" class="h-26 w-20" alt=${product.imagem}>
+        <img src="./assets/img/${product.imagem}" class="h-26 w-20" alt=${product.imagem}>
         <div class="w-full">
             <p class="text-md font-semibold w-40">${product.nome}</p>
             <p class="text-sm italic">${product.marca}</p>

@@ -69,7 +69,7 @@ export function desenharProdutoNoCarrinho(idProduto) {
         <button id="remover-produto-${
             product.id
         }"><i class="fa-solid fa-circle-xmark text-red-700 absolute top-2 right-2"></i></button>
-        <img src="./src/assets/img/${product.imagem}" class="h-20 w-14" alt=${product.imagem}>
+        <img src="./assets/img/${product.imagem}" class="h-20 w-14" alt=${product.imagem}>
         <div class="px-1">
             <p class="text-sm w-40">${product.nome}</p>
             <p class="text-sm italic">${product.marca}</p>

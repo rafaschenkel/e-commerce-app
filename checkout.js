@@ -28,7 +28,7 @@ export function desenharProdutosCarrinho(idProduto, qtdProduto) {
     li.classList.add(...liClassList);
 
     li.innerHTML = `
-        <img src="./src/assets/img/${product.imagem}" class="h-20 w-14" alt=${product.imagem}>
+        <img src="./assets/img/${product.imagem}" class="h-20 w-14" alt=${product.imagem}>
         <div class="w-full">
             <p class="text-sm font-semibold w-40">${product.nome}</p>
             <p class="text-xs italic">${product.marca}</p>
