@@ -128,6 +128,19 @@ export function initCart() {
     buttonOpenCart.addEventListener('click', handleCart);
     const buttonCloseCart = document.querySelector('#fechar-carrinho');
     buttonCloseCart.addEventListener('click', handleCart);
+    const buttonCheckout = document.querySelector('#carrinho-comprar');
+    buttonCheckout.addEventListener('click', irParaCheckout);
+    const buttonMinhasCompras = document.querySelector('#minhas-compras');
+    buttonMinhasCompras.addEventListener('click', irParaMinhasCompras);
+}
+
+function irParaCheckout() {
+    if (Object.keys(idsProdutoCarrinhoComQuantidade).length === 0) return;
+    window.location.href = window.location.origin + '/checkout.html';
+}
+
+function irParaMinhasCompras() {
+    window.location.href = window.location.origin + '/pedidos.html';
 }
 
 export function atualizarPrecoCarrinho() {
